@@ -32,7 +32,7 @@ hugoblox:
 
 links:
   - type: pdf
-    url: 'https://dl.acm.org/doi/pdf/10.1145/3733802.3764058'
+    url: '/uploads/Paper_The_Double-edged_Sword_of_LLM-based_Data_Reconstruction.pdf'
   - type: source
     url: 'https://dl.acm.org/doi/full/10.1145/3733802.3764058'
 

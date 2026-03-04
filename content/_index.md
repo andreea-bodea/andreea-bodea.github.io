@@ -7,7 +7,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: '6rem'
+  spacing: '2rem'
 
 sections:
   - block: resume-biography-3
@@ -23,6 +23,7 @@ sections:
         about: ''
         education: ''
         interests: ''
+      show_about_heading: false
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
@@ -57,7 +58,7 @@ sections:
   - block: collection
     id: research
     content:
-      title: Featured Publications
+      title: Publications
       filters:
         folders:
           - publications
@@ -65,16 +66,6 @@ sections:
     design:
       view: article-grid
       columns: 2
-  - block: collection
-    content:
-      title: All Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
-      view: citation
   - block: resume-experience
     id: experience
     content:
