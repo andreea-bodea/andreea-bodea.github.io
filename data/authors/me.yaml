@@ -9,9 +9,8 @@ name:
   pronunciation: ''  # Example: Wáng Wěi
   pronouns: she/her
 postnominals: ''
-status:
-  icon: briefcase
-role: Senior AI Research Scientist
+status: ''
+role: AI Researcher & Engineer
 bio: |
   Passionate AI researcher and engineer specializing in natural language processing, machine learning, and privacy-preserving techniques. 
   Experienced in delivering research-driven solutions and effectively managing complex projects. 
@@ -25,10 +24,10 @@ links:
   - icon: at-symbol
     url: mailto:andreea.e.bodea@gmail.com
     label: E-mail Me
-  - icon: brands/github
-    url: https://github.com/andreea-bodea
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/andreea-elena-bodea/
+  - icon: brands/github
+    url: https://github.com/andreea-bodea
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?hl=en&user=AD-cEaUAAAAJ
   - icon: academicons/orcid
@@ -41,7 +40,7 @@ interests:
   - Retrieval-Augmented Generation & Agents
 
 education:
-  - degree: MS Computer Science Master
+  - degree: MS Computer Science
     institution: Technical University of Munich (TUM)
     start: 10/2022
     end: 09/2025
@@ -49,7 +48,7 @@ education:
       Master's Thesis: “Privacy Issues and Privacy Preserving Mechanisms in Retrieval-Augmented Generation (RAG) systems“ (highest grade)
     button:
       text: Download dissertation
-      url: /Andreea-Elena_Bodea-MT_Privacy_in_RAG_Systems_22.04.2025_signed.pdf
+      url: /uploads/Andreea-Elena_Bodea-MT_Privacy_in_RAG_Systems_22.04.2025_signed.pdf
       icon: hero/arrow-down-tray
   - degree: BS Business Administration
     institution: Ludwig Maximilian University of Munich (LMU)
@@ -59,7 +58,7 @@ education:
       Bachelor's Thesis: “From freedom of speech to the U.S. Capitol riots: Topic evolution of content on Parler.”
     button:
       text: Download dissertation
-      url: /11999435_Andreea_Elena_Bodea_Bachelorarbeit_Abgabeversion_26-04-2022.pdf
+      url: /uploads/11999435_Andreea_Elena_Bodea_Bachelorarbeit_Abgabeversion_26-04-2022.pdf
       icon: hero/arrow-down-tray
   - degree: BS Computer Science
     institution: Ludwig Maximilian University of Munich (LMU)
@@ -69,7 +68,7 @@ education:
       Bachelor's Thesis: “Domain adapted topic modelling for alt-tech social media.”
     button:
       text: Download dissertation
-      url: /11999435_Andreea_Elena_Bodea_Bachelors_Thesis_Informatics_11-11-2022.pdf
+      url: /uploads/11999435_Andreea_Elena_Bodea_Bachelors_Thesis_Informatics_11-11-2022.pdf
       icon: hero/arrow-down-tray
 
 experience:

@@ -55,7 +55,7 @@ sections:
     design:
       columns: '1'
   - block: collection
-    id: papers
+    id: research
     content:
       title: Featured Publications
       filters:
@@ -75,6 +75,36 @@ sections:
         exclude_featured: false
     design:
       view: citation
+  - block: resume-experience
+    id: experience
+    content:
+      title: Recent Experience
+      username: me
+      count: 3  # Show only the 3 most recent positions
+      button:
+        text: View Full Experience
+        url: experience/
+    design:
+      date_format: 'January 2006'
+      is_education_first: false
+  - block: collection
+    id: blog
+    content:
+      title: Recent Blog Posts
+      subtitle: ''
+      text: ''
+      page_type: blog
+      count: 3  # Show only 3 most recent posts
+      filters:
+        folders:
+          - blog
+        exclude_featured: false
+      button:
+        text: View All Posts
+        url: blog/
+    design:
+      view: card
+      columns: 2
   - block: cta-card
     demo: true # Only display this section in the HugoBlox Kit demo site
     content:
