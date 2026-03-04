@@ -18,7 +18,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/resume.pdf
+        url: uploads/CV_Andreea_Bodea_(2026_February).pdf
       headings:
         about: ''
         education: ''
@@ -42,11 +42,16 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I am focusing on privacy in NLP and AI systems, particularly how to protect sensitive information when using Large Language Models (LLMs). 
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        My current research explores:
+        - Privacy risks in RAG systems: systematizing threats and mitigation strategies 
+        - Differential privacy for text: studying how LLMs can reconstruct private information from anonymized data, and how to prevent it
+        - Privacy-preserving AI applications: building systems that balance utility with strong privacy guarantees
 
-        Please reach out to collaborate 😃
+        I believe privacy should be a feature, not an afterthought. 
+
+        Please reach out to collaborate 😊
     design:
       columns: '1'
   - block: collection
@@ -70,44 +75,6 @@ sections:
         exclude_featured: false
     design:
       view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-  - block: collection
-    id: news
-    content:
-      title: Recent News
-      subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 10
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: card
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
   - block: cta-card
     demo: true # Only display this section in the HugoBlox Kit demo site
     content:

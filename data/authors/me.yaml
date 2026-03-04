@@ -2,85 +2,115 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
+  display: Andreea Elena Bodea
+  given: Andreea
+  family: Bodea
   alternate: ''  # Example: 王伟
   pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
-postnominals:
-  - PhD
-  - MIEEE
+  pronouns: she/her
+postnominals: ''
 status:
-  icon: "☕️"
+  icon: briefcase
 role: Senior AI Research Scientist
 bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
+  Passionate AI researcher and engineer specializing in natural language processing, machine learning, and privacy-preserving techniques. 
+  Experienced in delivering research-driven solutions and effectively managing complex projects. 
+  Committed to bridging theoretical insights with impactful, real-world AI applications.
 
 affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: Technical University of Munich (TUM)
+    url: https://www.cs.cit.tum.de/sebis/
 
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
+    url: mailto:andreea.e.bodea@gmail.com
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
   - icon: brands/github
-    url: https://github.com/example
+    url: https://github.com/andreea-bodea
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
+    url: https://www.linkedin.com/in/andreea-elena-bodea/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
+    url: https://scholar.google.com/citations?hl=en&user=AD-cEaUAAAAJ
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://orcid.org/0009-0003-5142-4014
 
 interests:
   - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Natural Language Processing
+  - Privacy-Preserving AI
+  - Retrieval-Augmented Generation & Agents
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  - degree: MS Computer Science Master
+    institution: Technical University of Munich (TUM)
+    start: 10/2022
+    end: 09/2025
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
+      Master's Thesis: “Privacy Issues and Privacy Preserving Mechanisms in Retrieval-Augmented Generation (RAG) systems“ (highest grade)
     button:
       text: Download dissertation
-      url: /resume.pdf
+      url: /Andreea-Elena_Bodea-MT_Privacy_in_RAG_Systems_22.04.2025_signed.pdf
       icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
+  - degree: BS Business Administration
+    institution: Ludwig Maximilian University of Munich (LMU)
+    start: 10/2019
+    end: 09/2023
+    summary: |
+      Bachelor's Thesis: “From freedom of speech to the U.S. Capitol riots: Topic evolution of content on Parler.”
+    button:
+      text: Download dissertation
+      url: /11999435_Andreea_Elena_Bodea_Bachelorarbeit_Abgabeversion_26-04-2022.pdf
+      icon: hero/arrow-down-tray
   - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+    institution: Ludwig Maximilian University of Munich (LMU)
+    start: 10/2018
+    end: 11/2022
+    summary: |
+      Bachelor's Thesis: “Domain adapted topic modelling for alt-tech social media.”
+    button:
+      text: Download dissertation
+      url: /11999435_Andreea_Elena_Bodea_Bachelors_Thesis_Informatics_11-11-2022.pdf
+      icon: hero/arrow-down-tray
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
+  - role: AI Researcher
+    org: Technical University of Munich (TUM)
+    start: 10/2024
+    end: 05/2026
     summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
+      - Authored a review research paper on privacy in RAG systems by systematizing literature and creating a widely applicable taxonomy of all privacy issues and privacy mitigation strategies
+      - Developed an open-source application enhancing text privacy through advanced anonymization techniques and differential privacy at multiple RAG pipeline stages    
     button:
       text: View portfolio
       url: /
       icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
+  - role: Startup Project Co-Founder
+    org: AI Entrepreneurship Lab - AI startup incubator by TUM.ai, Munich's leading AI student initiative
+    start: 10/2024
+    end: 01/2025
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      - Conducted extensive market analysis by interviewing over 30 lawyers, identifying crucial pain points in German legal tech
+      - Implemented an MVP for an AI-based search engine for legal cases, used by 5 lawyers, built with a LangChain Python backend and React frontend
+      - Pitched the startup idea to an audience of 400 people, including a committee of investors
+  - role: AI Engineer
+    org: Digital Product School by UnternehmerTUM in partnership with the Federal Ministry of Economic Cooperation and Development of Germany (BMZ) and the GovTech Campus Germany
+    start: 02/2024
+    end: 09/2024
+    summary: |
+      Built an AI-powered dashboard enabling ministry employees to analyze unstructured PDF reports with an agentic RAG system using LlamaIndex, Pinecone, Azure, FastAPI, and Docker.
+      Co-developed intuitive internal web application with TypeScript backend, React frontend, and PostgreSQL, significantly improving internal workflows.
+  - role: Teaching Assistant for the Software Development Practical Course - Java Programming
+    org: Ludwig Maximilian University of Munich (LMU)
+    start: 05/2022
+    end: 08/2022
+    summary: |
+      Facilitated agile project development as a Scrum Master, leading a team of 4 students to deliver a Java-based game project by coaching team members, introducing Agile engineering practices, and teaching Scrum principles
+  - role: Teaching Assistant for the Software Engineering Lecture
+    org: Ludwig Maximilian University of Munich (LMU)
+    start: 10/2021
+    end: 03/2022
+    summary: |
+      Increased grading efficiency and fairness by evaluating assignments and exams for 100+ students, ensuring timely, constructive feedback
 
 skills:
   - name: Technical Skills
@@ -89,28 +119,23 @@ skills:
         level: 5
       - label: Machine Learning
         level: 5
-      - label: Cloud Computing
-        level: 4
   - name: Research & Communication
     items:
       - label: Academic Writing
         level: 5
       - label: Conference Presentations
         level: 4
-      - label: Grant Proposals
-        level: 4
 
 languages:
   - name: English
     level: 5
-    label: Native
-  - name: Spanish
-    level: 4
-    label: Fluent
-
-awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+    label: Proficient (C1)
+  - name: German
+    level: 5
+    label: Proficient (C1)
+  - name: French
+    level: 3
+    label: Intermediate (B1)
+  - name: Romanian
+    level: 5
+    label: Native (C2)
