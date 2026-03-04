@@ -9,10 +9,13 @@ main:
     weight: 10
   - name: Research
     url: /#research
-    weight: 11
+    weight: 20
   - name: Experience
     url: /#experience
-    weight: 20
+    weight: 30
+  - name: Education
+    url: /#education
+    weight: 40
   - name: Blog
     url: /#blog
-    weight: 30
+    weight: 50

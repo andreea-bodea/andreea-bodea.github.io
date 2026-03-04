@@ -45,7 +45,10 @@ education:
     start: 10/2022
     end: 09/2025
     summary: |
-      Master's Thesis: “Privacy Issues and Privacy Preserving Mechanisms in Retrieval-Augmented Generation (RAG) systems“ (highest grade)
+      - Master's Thesis: “Privacy Issues and Privacy Preserving Mechanisms in Retrieval-Augmented Generation (RAG) systems“ (highest grade)
+      - Major: Machine Learning and Natural Language Processing (NLP)
+      - Lectures: Machine Learning, Introduction to Deep Learning, Computer Vision
+      - Erasmus Exchange at Sorbonne University Paris 09/2023-02/2024
     button:
       text: Download dissertation
       url: /uploads/Andreea-Elena_Bodea-MT_Privacy_in_RAG_Systems_22.04.2025_signed.pdf
@@ -79,10 +82,6 @@ experience:
     summary: |
       - Authored a review research paper on privacy in RAG systems by systematizing literature and creating a widely applicable taxonomy of all privacy issues and privacy mitigation strategies
       - Developed an open-source application enhancing text privacy through advanced anonymization techniques and differential privacy at multiple RAG pipeline stages    
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
   - role: Startup Project Co-Founder
     org: AI Entrepreneurship Lab - AI startup incubator by TUM.ai, Munich's leading AI student initiative
     start: 10/2024
@@ -96,8 +95,8 @@ experience:
     start: 02/2024
     end: 09/2024
     summary: |
-      Built an AI-powered dashboard enabling ministry employees to analyze unstructured PDF reports with an agentic RAG system using LlamaIndex, Pinecone, Azure, FastAPI, and Docker.
-      Co-developed intuitive internal web application with TypeScript backend, React frontend, and PostgreSQL, significantly improving internal workflows.
+      - Built an AI-powered dashboard enabling ministry employees to analyze unstructured PDF reports with an agentic RAG system using LlamaIndex, Pinecone, Azure, FastAPI, and Docker.
+      - Co-developed intuitive internal web application with TypeScript backend, React frontend, and PostgreSQL, significantly improving internal workflows.
   - role: Teaching Assistant for the Software Development Practical Course - Java Programming
     org: Ludwig Maximilian University of Munich (LMU)
     start: 05/2022
