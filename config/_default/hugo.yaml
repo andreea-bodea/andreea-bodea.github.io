@@ -6,7 +6,7 @@
 # Website name (set in params.yaml under hugoblox.branding.name)
 title: ''
 # Website URL
-baseURL: 'https://andreea-bodea.github.io/'
+baseURL: 'https://example.com/'
 
 ############################
 ## LANGUAGE
@@ -21,6 +21,12 @@ removePathAccents: true
 ## PAGE OPTIONS
 ############################
 
+cascade:
+  - _target:
+      path: /slides/**
+      kind: page
+    outputs: [HTML, present]
+
 ############################
 ## ADVANCED
 ############################
@@ -28,7 +34,7 @@ removePathAccents: true
 build:
   writeStats: true
 enableGitInfo: false
-summaryLength: 30
+summaryLength: 40
 pagination:
   pagerSize: 10
 enableEmoji: true
