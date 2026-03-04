@@ -7,7 +7,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: '2rem'
+  spacing: '0rem'
 
 sections:
   - block: resume-biography-3
@@ -96,6 +96,14 @@ sections:
     design:
       view: card
       columns: 2
+  - block: resume-skills
+    content:
+      title: Skills
+      username: me
+  - block: resume-languages
+    content:
+      title: Languages
+      username: me
   - block: cta-card
     demo: true # Only display this section in the HugoBlox Kit demo site
     content:
