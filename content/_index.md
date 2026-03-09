@@ -18,7 +18,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/CV_Andreea_Bodea_(2026_February).pdf
+        url: /uploads/CV_Andreea_Bodea_(2026_February).pdf
       headings:
         about: 'About me'
         education: ''
@@ -67,19 +67,14 @@ sections:
       view: article-grid
       columns: 2
   - block: resume-experience
-    id: experience
+    id: experience-education
     content:
-      title: Recent Experience
+      title: Experience
       username: me
-      count: 3  # Show only the 3 most recent positions
-      button:
-        text: View Full Experience
-        url: experience/
     design:
       date_format: 'January 2006'
       is_education_first: false
   - block: resume-education
-    id: education
     content:
       title: Education
       username: me
