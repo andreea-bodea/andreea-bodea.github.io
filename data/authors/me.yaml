@@ -1,19 +1,13 @@
-schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
   display: Andreea Elena Bodea
   given: Andreea
   family: Bodea
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
-  pronouns: she/her
-postnominals: ''
-status: ''
 role: AI Researcher & Engineer
 bio: |
-  Passionate AI researcher and engineer specializing in natural language processing, machine learning, and privacy-preserving techniques. 
-  Experienced in delivering research-driven solutions and effectively managing complex projects. 
+  Passionate AI researcher and engineer specializing in natural language processing, machine learning, and privacy-preserving techniques.
+  Experienced in delivering research-driven solutions and effectively managing complex projects.
   Committed to bridging theoretical insights with impactful, real-world AI applications.
 
 affiliations:
@@ -44,34 +38,31 @@ education:
     start: 10/2022
     end: 09/2025
     summary: |
-      - Master's Thesis: “Privacy Issues and Privacy Preserving Mechanisms in Retrieval-Augmented Generation (RAG) systems“ (highest grade)
+      - Master's Thesis: "Privacy Issues and Privacy Preserving Mechanisms in Retrieval-Augmented Generation (RAG) systems" (highest grade)
       - Major: Machine Learning and Natural Language Processing (NLP)
       - Lectures: Machine Learning, Introduction to Deep Learning, Computer Vision
       - Erasmus Exchange at Sorbonne University Paris 09/2023-02/2024
     button:
       text: Download dissertation
       url: /uploads/Andreea-Elena_Bodea-MT_Privacy_in_RAG_Systems_22.04.2025_signed.pdf
-      icon: hero/arrow-down-tray
   - degree: BS Business Administration
     institution: Ludwig Maximilian University of Munich
     start: 10/2019
     end: 09/2023
     summary: |
-      Bachelor's Thesis: “From freedom of speech to the U.S. Capitol riots: Topic evolution of content on Parler.”
+      Bachelor's Thesis: "From freedom of speech to the U.S. Capitol riots: Topic evolution of content on Parler."
     button:
       text: Download dissertation
       url: /uploads/11999435_Andreea_Elena_Bodea_Bachelorarbeit_Abgabeversion_26-04-2022.pdf
-      icon: hero/arrow-down-tray
   - degree: BS Computer Science
     institution: Ludwig Maximilian University of Munich
     start: 10/2018
     end: 11/2022
     summary: |
-      Bachelor's Thesis: “Domain adapted topic modelling for alt-tech social media.”
+      Bachelor's Thesis: "Domain adapted topic modelling for alt-tech social media."
     button:
       text: Download dissertation
       url: /uploads/11999435_Andreea_Elena_Bodea_Bachelors_Thesis_Informatics_11-11-2022.pdf
-      icon: hero/arrow-down-tray
 
 experience:
   - role: AI Researcher
@@ -80,7 +71,7 @@ experience:
     end: 05/2026
     summary: |
       - Authored a review research paper on privacy in RAG systems by systematizing literature and creating a widely applicable taxonomy of all privacy issues and privacy mitigation strategies
-      - Developed an open-source application enhancing text privacy through advanced anonymization techniques and differential privacy at multiple RAG pipeline stages    
+      - Developed an open-source application enhancing text privacy through advanced anonymization techniques and differential privacy at multiple RAG pipeline stages
   - role: Startup Project Co-Founder
     org: AI Entrepreneurship Lab - AI startup incubator by TUM.ai, Munich's leading AI student initiative
     start: 10/2024
@@ -110,29 +101,50 @@ experience:
       Increased grading efficiency and fairness by evaluating assignments and exams for 100+ students, ensuring timely, constructive feedback
 
 skills:
-  - name: Technical Skills
+  - name: Programming
     items:
       - label: Python
-        level: 5
-      - label: Machine Learning
-        level: 5
+      - label: Java
+      - label: SQL
+      - label: TypeScript
+  - name: LLM & RAG Tools
+    items:
+      - label: LlamaIndex
+      - label: LangChain
+      - label: LLM SDKs (e.g. OpenAI)
+  - name: ML/NLP Libraries
+    items:
+      - label: Transformers
+      - label: Scikit-Learn
+      - label: SpaCy
+  - name: Frameworks & Tools
+    items:
+      - label: PostgreSQL
+      - label: Streamlit
+      - label: React
+      - label: FastAPI
+      - label: Docker
+  - name: Version Control & Others
+    items:
+      - label: GIT (GitHub, GitLab)
+      - label: Jira
+      - label: Miro
   - name: Research & Communication
     items:
+      - label: Literature Review
       - label: Academic Writing
-        level: 5
       - label: Conference Presentations
-        level: 4
 
 languages:
   - name: English
-    level: 5
+    level: 90
     label: Proficient (C1)
   - name: German
-    level: 5
+    level: 90
     label: Proficient (C1)
   - name: French
-    level: 3
+    level: 50
     label: Intermediate (B1)
   - name: Romanian
-    level: 5
+    level: 100
     label: Native (C2)

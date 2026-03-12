@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{- $title := site.Title -}}
+{{- if .IsPage -}}
+  {{- $title = printf "%s | %s" .Title site.Title -}}
+{{- end -}}
+<title>{{ $title }}</title>
+
+{{- $description := site.Params.description | default "" -}}
+{{- if .Params.summary -}}
+  {{- $description = .Params.summary -}}
+{{- else if .Params.abstract -}}
+  {{- $description = .Params.abstract | truncate 160 -}}
+{{- end -}}
+<meta name="description" content="{{ $description }}">
+
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Params.name }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+{{- with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{- end }}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+
+<!-- Tailwind CSS via Hugo Pipes -->
+{{ with resources.Get "css/main.css" }}
+  {{ $opts := dict "inlineImports" true }}
+  {{ with . | css.TailwindCSS $opts }}
+    {{ if hugo.IsProduction }}
+      {{ with . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ else }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ end }}
+  {{ end }}
+{{ end }}

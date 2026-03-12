@@ -1,0 +1,63 @@
+{{ define "main" }}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-20">
+  <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">Publications</h1>
+
+  <div class="space-y-8">
+    {{- range .Pages.ByDate.Reverse }}
+      <article class="publication-card">
+        <h2 class="text-xl font-semibold text-gray-900 dark:text-white leading-snug">
+          <a href="{{ .Permalink }}" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+            {{ .Title }}
+          </a>
+        </h2>
+
+        <!-- Authors -->
+        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+          {{- $authorData := $.Site.Data.authors.me -}}
+          {{- range $i, $a := .Params.authors -}}
+            {{- if $i }}, {{ end -}}
+            {{- if eq $a "me" -}}
+              <span class="font-semibold">{{ $authorData.name.display }}</span>
+            {{- else -}}
+              {{ $a }}
+            {{- end -}}
+          {{- end }}
+        </p>
+
+        <!-- Venue & Date -->
+        <p class="mt-1 text-sm text-gray-500 dark:text-gray-500">
+          <span class="italic">{{ .Params.publication }}</span>
+          · {{ .Date.Format "January 2006" }}
+        </p>
+
+        <!-- Summary -->
+        {{- if .Params.summary }}
+          <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">
+            {{ .Params.summary }}
+          </p>
+        {{- end }}
+
+        <!-- Links -->
+        {{- if .Params.links }}
+          <div class="mt-4 flex flex-wrap gap-2">
+            {{- range .Params.links }}
+              <a href="{{ .url }}" target="_blank" rel="noopener"
+                 class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-md
+                        bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300
+                        hover:bg-primary-50 hover:text-primary-700
+                        dark:hover:bg-primary-900/30 dark:hover:text-primary-300
+                        transition-colors">
+                {{- if eq .type "pdf" }}PDF
+                {{- else if eq .type "code" }}Code
+                {{- else if eq .type "source" }}Source
+                {{- else }}{{ .name | default .type }}
+                {{- end }}
+              </a>
+            {{- end }}
+          </div>
+        {{- end }}
+      </article>
+    {{- end }}
+  </div>
+</div>
+{{ end }}
