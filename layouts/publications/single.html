@@ -85,6 +85,7 @@
   {{- if $featured }}
     <div class="mt-8 rounded-lg overflow-hidden">
       <img src="{{ $featured.RelPermalink }}" alt="{{ .Title }}"
+           loading="lazy" decoding="async"
            class="w-full rounded-lg">
     </div>
   {{- end }}

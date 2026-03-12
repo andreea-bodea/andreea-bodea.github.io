@@ -32,6 +32,41 @@
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description }}">
 
+<!-- JSON-LD Structured Data -->
+{{- $author := .Site.Data.authors.me -}}
+{{- if $author }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ $author.name.display }}",
+  "givenName": "{{ $author.name.given }}",
+  "familyName": "{{ $author.name.family }}",
+  "jobTitle": "{{ $author.role }}",
+  {{- with index $author.affiliations 0 }}
+  "affiliation": {
+    "@type": "Organization",
+    "name": "{{ .name }}"{{ if .url }},
+    "url": "{{ .url }}"{{ end }}
+  },
+  {{- end }}
+  "url": "{{ .Site.BaseURL }}",
+  "sameAs": [
+    {{- $links := slice -}}
+    {{- range $author.links -}}
+      {{- if not (strings.HasPrefix .url "mailto:") -}}
+        {{- $links = $links | append .url -}}
+      {{- end -}}
+    {{- end -}}
+    {{- range $i, $l := $links -}}
+      {{- if $i }},{{ end }}
+    "{{ $l }}"
+    {{- end }}
+  ]
+}
+</script>
+{{- end }}
+
 <!-- Tailwind CSS via Hugo Pipes -->
 {{ with resources.Get "css/main.css" }}
   {{ $opts := dict "inlineImports" true }}

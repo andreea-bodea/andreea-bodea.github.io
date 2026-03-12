@@ -14,6 +14,7 @@
         {{ if $avatar }}
           {{ $avatar = $avatar.Fill "400x400 Center" }}
           <img src="{{ $avatar.RelPermalink }}" alt="{{ $author.name.display }}"
+               loading="lazy" decoding="async"
                class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover ring-4 ring-white dark:ring-gray-800 shadow-xl">
         {{ end }}
 
@@ -37,7 +38,7 @@
         <!-- Social links (vertical with labels) -->
         <div class="mt-4 flex flex-col items-center gap-2 w-full">
           <!-- Download CV button -->
-          <a href="{{ "/uploads/CV_Andreea_Bodea_(2026_February).pdf" | relURL }}"
+          <a href="{{ "/uploads/CV_Andreea_Bodea_(2026_March).pdf" | relURL }}"
              class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-lg
                     bg-primary-600 text-white hover:bg-primary-700
                     dark:bg-primary-500 dark:hover:bg-primary-600
@@ -188,6 +189,7 @@
             {{- if $featured }}
               <a href="{{ .Permalink }}" class="-mx-6 -mt-6 mb-4 block">
                 <img src="{{ $featured.RelPermalink }}" alt="{{ .Title }}"
+                     loading="lazy" decoding="async"
                      class="w-full h-48 object-cover hover:opacity-90 transition-opacity">
               </a>
             {{- end }}
@@ -287,6 +289,20 @@
             {{- if .summary }}
               <div class="mt-3 text-sm text-gray-600 dark:text-gray-400 prose prose-sm dark:prose-invert max-w-none">
                 {{ .summary | markdownify }}
+              </div>
+            {{- end }}
+            {{- if .button }}
+              <div class="mt-3">
+                <a href="{{ .button.url | relURL }}"
+                   class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-md
+                          bg-primary-600 text-white hover:bg-primary-700
+                          dark:bg-primary-500 dark:hover:bg-primary-600
+                          transition-colors">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                  </svg>
+                  {{ .button.text }}
+                </a>
               </div>
             {{- end }}
           </div>

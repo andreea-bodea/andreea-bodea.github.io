@@ -87,6 +87,9 @@ experience:
     summary: |
       - Built an AI-powered dashboard enabling ministry employees to analyze unstructured PDF reports with an agentic RAG system using LlamaIndex, Pinecone, Azure, FastAPI, and Docker.
       - Co-developed intuitive internal web application with TypeScript backend, React frontend, and PostgreSQL, significantly improving internal workflows.
+    button:
+      text: Recommendation letter
+      url: /uploads/20241024_Andreea_Bodea_Recommendation_BMZ.pdf
   - role: Teaching Assistant for the Software Development Practical Course - Java Programming
     org: Ludwig Maximilian University of Munich (LMU)
     start: 05/2022
