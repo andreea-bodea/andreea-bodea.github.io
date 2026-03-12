@@ -33,6 +33,8 @@ hugoblox:
 links:
   - type: pdf
     url: '/uploads/Paper_SoK_Privacy_Risks_and_Mitigations_in_Retrieval-Augmented_Generation_Systems.pdf'
+  - type: preprint
+    url: 'https://arxiv.org/abs/2601.03979'
   - type: code
     url: 'https://github.com/sebischair/SoK-RAG-Privacy'
   - type: source
